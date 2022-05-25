@@ -29,12 +29,12 @@
 
                 <div class="navbar__logo">
                     <a href="#">
-                        <h3 class="logo">BrandName</h3>
+                        <h3>BrandName</h3>
                     </a>
                 </div>
         
                 <nav class="navbar__2">
-                    <ul class="navbar-nav navbar__2__fix">
+                    <ul class="navbar__nav navbar__2__fix">
                         <li class="nav-item"><a href="#">Home</a></li>
                         <li class="nav-item"><a href="#">Product</a></li>
                         <li class="nav-item"><a href="#">Pricing</a></li>
@@ -43,10 +43,10 @@
                 </nav>
 
                 <nav class="navbar__3">
-                    <ul class="navbar-nav navbar__3__fix">
+                    <ul class="navbar__3__fix">
                         <li class="nav-item"><a href="#">Login</a></li>
-                        <li class="nav-item">
-                            <button type="button" class="btn btn-primary btn-primary-fixed btn__0">
+                        <li class="nav-item btn__rad">
+                            <button id="button" type="button" class="btn-primary-fixed">
                                 Become a member
                                 <div class="icn arrow-right icn-xs">
                                     <img src="pics/Vector.svg" alt="стрелка">
@@ -60,14 +60,14 @@
         </div>
 
         <div class="container">
-            <div class="head__cont row">
+            <div class="head__cont">
                 <div class="col-md-6 head__cont__left">
-                    <h1>Your Financial Assistant</h1>
-                    <h4>We know how large objects will act,<br>
+                    <h1 id="txt__white">Your Financial Assistant</h1>
+                    <h4 id="txt__white">We know how large objects will act,<br>
                         but things on a small scale.</h4>
                     <div class="head__btns">
-                        <button type="button " class="btn btn-primary btn-primary-fixed header__btn">Get Quote Now</button>
-                        <button type="button" class="btn btn-outline-primary btn-outline-primary-fixed  header__btn">Learn More</button>
+                        <button id="button" type="button" class="btn-primary-fixed header__btn">Get Quote Now</button>
+                        <button id="button" type="button" class="btn btn-outline-primary btn-outline-primary-fixed header__btn">Learn More</button>
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -80,7 +80,7 @@
     </header>
 
     <div class="features">
-        <div class="container block__fe">
+        <div id="block__fe" class="container">
 
             <div class="row">
                 <div class="main-content">
@@ -93,7 +93,7 @@
 
             <div class="row row__fe">
 
-                <div class="block__pers">
+                <div id="block__pers">
                     <div class="card-item">
                         <img src="pics/cheli.png" alt="success">
                         <h2>972 +</h2>
@@ -101,7 +101,7 @@
                     </div>
                 </div>
 
-                <div class="block__pers">
+                <div id="block__pers">
                     <div class="card-item">
                         <img src="pics/cheli.png" alt="success">
                         <h2>181 +</h2>
@@ -109,7 +109,7 @@
                     </div>
                 </div>
 
-                <div class="block__pers">
+                <div id="block__pers">
                     <div class="card-item">
                         <img src="pics/cheli.png" alt="success">
                         <h2>0,98</h2>
@@ -117,7 +117,7 @@
                     </div>
                 </div>
 
-                <div class="block__pers">
+                <div id="block__pers">
                     <div class="card-item">
                         <img src="pics/cheli.png" alt="success">
                         <h2>746 +</h2>
@@ -130,7 +130,7 @@
     </div>
 
     <div class="testimonials">
-        <div class="container block__testi">
+        <div id="block__testi" class="container">
 
             <div class="row">
                 <div class="main-content">
@@ -140,8 +140,8 @@
                 </div>
             </div>
 
-            <div class="row row__testi">
-                <div class="col-md-6 block__pers__2">
+            <div id="row__testi" class="row">
+                <div id="block__pers__2" class="col-md-6">
                     <div class="card-item__2">
                         
                         <div class="img__pers__testi">
@@ -171,7 +171,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-6 block__pers__2">
+                <div id="block__pers__2" class="col-md-6">
                     <div class="card-item__2">
 
                         <div class="img__pers__testi">
@@ -215,15 +215,15 @@
                 </div>
             </div>
 
-            <div class="row row__about">
+            <div id="row__about" class="row">
 
-                <div class="left__about">
+                <div id="left__about">
                     <video id="player" controls poster="pics/video.1.jpg">
                         <source src="pics/Rick Astley - Never Gonna Give You Up (Official Music Video).mp4" type="video/mp4" />
                     </video>
                 </div>
 
-                <div class="right__about">
+                <div id="right__about">
                     <div class="right__about__txt">
                         <h3>Most trusted in our field</h3>
                         <p>Most calendars are designed for teams. Slate<br>
@@ -233,7 +233,7 @@
                     <div class="card-item__about">
                         <div class="flex-row">
                             <img src="pics/set1.png" alt="success">
-                            <div class="flex-row_txt">
+                            <div class="flex-row__txt">
                                 <h5>the quick fox jumps over the lazy 
                                     dog</h5>
                                 <h6>Things on a very small scale ...</h6>
@@ -268,8 +268,8 @@
                 </div>
             </div>
 
-            <div class="row row__pricing">
-                <div class="block__row__pricing">
+            <div id="row__pricing" class="row">
+                <div id="block__row__pricing">
                     <div class="pricing-style">
                         <h3>FREE</h3>
                         <h5>Organize across all apps by hand</h5>
@@ -308,10 +308,10 @@
                                 </h6>
                             </div>
                         </div>
-                        <button class="button btn primary-color button__price">Try for free</button>
+                        <button id="button" type="button" class="button btn primary-color button__price">Try for free</button>
                     </div>
                 </div>
-                <div class="block__row__pricing">
+                <div id="block__row__pricing">
                     <div class="pricing-style">
                         <h3>STANDARD</h3>
                         <h5>Organize across all apps by hand</h5>
@@ -350,7 +350,7 @@
                                 </h6>
                             </div>
                         </div>
-                        <button class="button btn primary-color button__price">Buy Now</button>
+                        <button id="button" type="button" class="button btn primary-color button__price">Buy Now</button>
                     </div>
                 </div>
             </div>
@@ -363,7 +363,7 @@
         <div class="container block__contact">
             <div class="row">
                 <div class="main-content">
-                    <div class="card__item__contact">
+                    <div class="card__item__contact btn__rad">
                         <div class="contact__txt">
                             <h5>Contact Us</h5>
                             <h2>Make an Appointment</h2>
@@ -418,7 +418,7 @@
 
                         </div>
                         
-                        <button class="btn btn-primary btn-primary-fixed btn__cont">Book Appointment</button>
+                        <button id="button" type="button" class="btn-primary-fixed btn__cont">Book Appointment</button>
                     </div>
                 </div>
             </div>
