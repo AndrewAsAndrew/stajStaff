@@ -9,6 +9,14 @@ body a, p, h1, h2, h3, h4, h5, h6 {
     font-style: normal;
 } 
 
+#mobile {
+    display: none;
+}
+
+.mobile {
+    display: none;
+}
+
 /*FONTS FIX*/
 body a {
     text-decoration: none;
@@ -64,6 +72,10 @@ body p {
 
 
 /*HEADER*/
+#mobile__navbar {
+    display: none;
+}
+
 .navbar__logo {
     align-self: center;
 }
@@ -269,8 +281,6 @@ header {
     flex-direction: column;
     align-items: center;
     padding: 0px;
-    width: 693px;
-    height: 164px;
 }
 
 .main-content h2 {
@@ -507,11 +517,7 @@ header {
 
 #left__about .plyr__control--overlaid svg {
     left: 0px;
-}
-
-#left__about .plyr video {
-    height: 442px;
-}    
+}  
 
 #left__about .plyr {
     max-width: 592px;
@@ -635,29 +641,34 @@ header {
     align-items: flex-start;
 }
 
-.button__price {
-    background: #23A6F0 !important;
+.pricing-style .button__price {
+    background: #23A6F0;
     border: 1px solid #23A6F0;
-    border-radius: 7px !important;
+    border-radius: 7px;
     flex-direction: row;
     align-items: center;
     width: 277px;
     height: 49px;
     margin-top: -13px;
-    padding: 8px 38px 8px 38px !important;
+    padding: 8px 38px 8px 38px;
 }
+
+.pricing-style .btn__mobile {
+    display: none;
+}
+
 /*PRICING END*/
 
 /*CONTACT*/
 .contact {
-    width: 90.8%;
+    width: 100%;
     height: 829px;
     background-image: url(pics/cover.jpg);
     background-repeat: repeat-x;
 }
 
-.block__contact {
-    display: flex !important;
+.contact .block__contact {
+    display: flex;
     flex-direction: column;
     align-items: center;
     padding: 160px 0px 96px;
@@ -724,9 +735,9 @@ header {
     margin-bottom: -400px;
 }
 
-.form-control {
-    width: 455px !important;
-    height: 50px !important;
+.form-group .form-control {
+    width: 455px;
+    height: 50px;
 }
 
 .form-control__2 {
@@ -748,8 +759,8 @@ header {
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
-.btn__cont {
-    padding: 15px 38px !important;
+.btn__rad .btn__cont {
+    padding: 15px 38px;
     margin-top: 8px;
 }
 /*CONTACT END*/
@@ -823,3 +834,532 @@ header {
     letter-spacing: 0.3px;
 }
 /*FOOTER END*/
+
+
+
+/*MOBILE*/
+@media (min-width: 320px) and (max-width: 799px) {
+    
+    body {
+        display:block;
+        max-width: 60em;
+        position: relative;
+    }
+
+    #mobile {
+        display: block;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    #desktop {
+        display: none;
+    }
+
+    /*FONTS FIX*/
+    body h1 {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 142%;
+        text-align: center;
+        letter-spacing: -0.7px;
+    }
+
+    body h2 {
+        text-align: center;
+    }
+
+    body h4 {
+        text-align: center;
+    }
+
+    body h5 {
+        text-align: center;
+    }
+
+    body h6 {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.2px;
+        color: #737373;
+    }
+
+    body p {
+        text-align: center;
+    }
+    /*FONTS FIX END*/
+
+    /*HEADER*/
+    header {
+        width: 100%;
+        height: 1001px;
+    }
+
+    #header__mobile {
+        display: block;
+        position: fixed;
+        max-width: 100%;
+        width: 100%;
+        padding: 0px 51px 0px 38px;
+        top: 0;
+        left: 0;
+        z-index: 3;
+    }
+
+    #header__mobile::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+    }
+
+    .navbar__main {
+        position: relative;
+        z-index: 3;
+        display: flex;
+        justify-content: space-between;
+        height: 99px;
+        align-items: center;
+        width: 100%;
+        top: 0;
+    }
+
+    .navbar__2 {
+        position: fixed;
+        display: block;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: 532px;
+        background: white;
+        z-index: 1;
+    }
+
+    .navbar__2.active {
+        top: 0;
+    }
+
+    .header__burg {
+        display: flex;
+        position: relative;
+        gap: 28px;
+        z-index: 3;
+    }
+
+    .menu {
+        width: 23px;
+    }
+
+    .navbar__nav {
+        flex-direction: column;
+        display: flex;
+        list-style: none;
+        margin-top: 164px;
+        align-items: center;
+        padding-left: 0;
+        gap: 30px;
+        font-size: 30px;
+        letter-spacing: 0.5px;
+        margin-left: -2%;
+    }
+
+    .navbar__nav a {
+        font-weight: 500;
+        color: #737373;
+    }
+
+    .navbar__logo {
+        z-index: 3;
+    }
+
+    .navbar__logo h3 {
+        color: #252B42;
+    }
+
+    .head__cont {
+        width: 100%;
+        top: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 85px;
+        margin-top: 100px;
+        gap: 30px;
+    }
+
+    .head__btns {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        gap: 20px;
+    }
+
+    .head__btns button {
+        height: 41px;
+        padding: 9px 35px;
+    }
+
+    body .row {
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .main-content p {
+        width: auto;
+        height: auto;
+    }
+
+    /*HEADER END*/
+
+    /*FEATURES*/
+    .features {
+        width: 100%;
+        height: 1407px;
+    }
+
+    .row__fe {
+        width: auto;
+        height: auto;
+    }
+
+    #block__pers {
+        width: auto;
+    }
+
+    #block__fe {
+        gap: 56px;
+        padding: 98px 0px;
+    }
+
+    .card-item {
+        padding: 30px 10px 30px 0px;
+        gap: 9px;
+    }
+    /*FEATURES END*/
+
+    /*TESTIMONIALS*/
+    .testimonials {
+        width: 100%;
+        height: 1446px;
+    }
+
+    #block__testi {
+        width: auto;
+        padding: 91px 0px;
+        gap: 38px;
+    }
+
+    #row__testi{
+        width: auto;
+        margin-right: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-item__2 {
+        flex-direction: column;
+    }
+
+    .card__content {
+        padding: 40px 30px;
+        gap: 15px;
+    }
+
+    .img__pers__testi img {
+        width: auto;
+        height: auto;
+        left: 0;
+    }
+
+    .stars {
+        gap: 2px;
+    }
+
+    #block__pers__2 {
+        width: 96%;
+    }
+
+    .card__content p {
+        text-align: inherit;
+    }
+    /*TESTIMONIALS END*/
+
+    /*ABOUT US*/
+    .about__us {
+        width: 100%;
+        height: 1493px;
+    }
+
+    .block__about {
+        padding: 118px 0px;
+        gap: 77px;
+    }
+
+    #left__about .plyr {
+        max-width: 32.5%;
+        min-width: 333px;
+        height: 442px;
+        max-height: 442px;
+    }
+
+    #left__about .plyr video {
+        display: block;
+        position: relative;
+        height: 100%;
+        left: -21%;
+        width: 141%;
+    }
+
+    #left__about .plyr__poster {
+        left: -38%;
+        width: 178%;
+    }
+
+    #left__about .plyr__control--overlaid {
+        padding: calc(var(--plyr-control-spacing,25px)*1.5);
+    }
+
+    #left__about .plyr--full-ui.plyr--video .plyr__control--overlaid {
+        display: block;
+    }
+
+    #left__about .plyr__control--overlaid svg {
+        left: 0px;
+    }
+
+    #left__about {
+        display: flex;
+        align-items: center;
+        width: auto;
+        flex-direction: column;
+    }
+
+    #row__about {
+        padding: 0px;
+        width: 100%;
+        height: auto;
+        gap: 53px;
+    }
+
+    #right__about {
+        padding: 0px 34px 0px 27px;
+        gap: 23px;
+        width: auto;
+        align-items: flex-start;
+    }
+
+    .card-item__about {
+        margin-left: 3px;
+    }
+
+    .flex-row__txt h5 {
+        text-align: inherit;
+    }
+
+    .right__about__txt h3 {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 142%;
+        letter-spacing: 0.2px;
+    }
+
+    .right__about__txt p {
+        text-align: inherit;
+    }
+
+    /*ABOUT US END*/
+
+    /*PRICING*/
+    .pricing {
+        width: 100%;
+        height: 1865px;
+    }
+
+    .block__pricing {
+        padding: 92px 0px 44px 0px;
+    }
+
+    #row__pricing {
+        gap: 29px;
+    }
+
+    .pricing-style {
+        padding: 50px 23px;
+        width: 325px;
+    }
+
+    .pricing-style .button__price {
+        width: 246px;
+    }
+
+    .feature__item {
+        padding: 0px 0px 15px 13px;
+    }
+
+    .pricing-style .btn__mobile {
+        display: block;
+    }
+
+    .pricing-style .btn__hidden {
+        display: none;
+    }
+
+    /*PRICING END*/
+
+    /*CONTACT*/
+    .contact__mobile {
+        background-color: #252B42;
+        width: 100%;
+        height: 332px;
+    }
+
+    .contact__mobile .card-item {
+        height: 212px;
+        margin-top: 14.5%;
+        margin-bottom: 14.5%;
+    }
+
+    .contact__mobile h3 {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 133%;
+        text-align: center;
+        letter-spacing: 0.1px;
+        color: #FFFFFF;
+        margin-bottom: 29px;
+    }
+
+    .mb-3 {
+        margin-top: 26px;
+        padding: 0 7%;
+    }
+
+    .card-item .form-control {
+        padding: 1rem 0.75rem;
+        letter-spacing: 1px;
+    }
+
+    .input-group>:not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+        padding: 15px 22px;
+    }
+
+    .card-item .btn-outline-secondary {
+        color: white;
+        background-color: #24a6f0;
+    }
+
+    /*CONTACT END*/
+
+    /*FOOTER*/
+    .footer {
+        width: 100%;
+        height: 1005px;
+    }
+
+    .block__footer {
+        width: auto;
+        height: auto;
+    }
+
+    .container__footer {
+        display: flex;
+        padding: 80px 0px;
+        gap: 0;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .row__footer {
+        display: flex;
+        flex-direction: column;
+        padding: 0px 32px 0px 0px;
+        gap: 29px;
+        width: auto;
+        height: auto;
+        align-items: flex-start;
+    }
+
+    .row__footer p {
+        text-align: inherit;
+    }
+
+    /*FOOTER END*/
+
+}
+/*MOBILE END*/
+
+
+
+
+
+
+@media (min-width: 800px) and (max-width: 1200px) {
+    
+    body {
+        display:block;
+    }
+
+    /*HEADER*/
+    header {
+        width: 100%;
+        height: auto;
+    }
+    /*HEADER END*/
+
+    /*FEATURES*/
+    .features {
+        width: 100%;
+        height: auto;
+    }
+    /*FEATURES END*/
+
+    /*TESTIMONIALS*/
+    .testimonials {
+        width: 100%;
+        height: auto;
+    }
+    /*TESTIMONIALS END*/
+
+    /*ABOUT US*/
+    .about__us {
+        width: 100%;
+        height: auto;
+    }
+    /*ABOUT US END*/
+
+    /*PRICING*/
+    .pricing {
+        width: 100%;
+        height: auto;
+    }
+    /*PRICING END*/
+
+    /*CONTACT*/
+    .contact {
+        width: 100%;
+        height: auto;
+    }
+
+    /*CONTACT END*/
+
+    /*FOOTER*/
+    .footer {
+        width: 100%;
+        height: auto;
+    }
+    /*FOOTER END*/
+}
