@@ -75,6 +75,9 @@
                     <h4 id="txt__white" class="desktop">We know how large objects will act,<br>
                         but things on a small scale.
                     </h4>
+
+                    <h4 id="txt__white" class="planshet">We know how large objects will act, but things on a small scale.
+                    </h4>
                     
                     <h4 id="txt__white" class="mobile">We know how large<br>
                         objects will act, but things<br>
@@ -87,6 +90,7 @@
                     </div>
                 </div>
                 <div class="col-md-6">
+                    <img class="planshet" src="pics/png-cover.1.2.png" alt="Успех">
                     <img id="mobile" src="pics/png-cover.1.2.png" alt="Успех">
                     <img id="desktop" src="pics/png-cover.1.png" alt="Успех">
                 </div>
@@ -132,7 +136,9 @@
                         <img id="desktop" src="pics/cheli.png" alt="success">
                         <img id="mobile" src="pics/gaika.png" alt="success">
                         <h2>181 +</h2>
-                        <h5>Satisfied Customers</h5>
+                        <h5 class="desktop">Satisfied Customers</h5>
+                        <h5 class="planshet">Satisfied <br> Customers</h5>
+                        <h5 class="mobile">Satisfied Customers</h5>
                     </div>
                 </div>
 
@@ -141,7 +147,9 @@
                         <img id="desktop" src="pics/cheli.png" alt="success">
                         <img id="mobile" src="pics/gaika.png" alt="success">
                         <h2>0,98</h2>
-                        <h5>Successful projects</h5>
+                        <h5 class="desktop">Successful projects</h5>
+                        <h5 class="planshet">Successful <br> projects</h5>
+                        <h5 class="mobile">Successful projects</h5>
                     </div>
                 </div>
 
@@ -514,8 +522,14 @@
                 <div class="row__footer">
                     <div class="col-md-3">
                         <h3>Get In Touch</h3>
-                        <p>the quick fox jumps over the <br>
-                            lazy dog</p>
+                        <p class="desktop">the quick fox jumps over the <br>
+                            lazy dog
+                        </p>
+                        <p class="mobile">the quick fox jumps over the <br>
+                            lazy dog
+                        </p>
+                        <p class="planshet">the quick fox jumps over the lazy dog
+                        </p>
                         <div class="social__media">
 
                             <a href="#"><svg xmlns="http://www.w3.org/2000/svg" color="#23A6F0" width="24" height="24" fill="currentColor" class="bi bi-meta" viewBox="0 0 16 16">
@@ -569,6 +583,8 @@
         </div>
     </div>
 
+    <button onclick="topFunction()" id="myBtn" class="btn" title="Go to top">Top</button>
+
     <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
     <script src="https://cdn.plyr.io/3.7.2/plyr.polyfilled.js"></script>
     <script>
@@ -580,6 +596,25 @@
                 $('.navbar__2').toggleClass('active');
             });
         });
+    </script>
+
+    <script>
+        var mybutton = document.getElementById("myBtn");
+        
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
     </script>
 
 

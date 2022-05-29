@@ -17,6 +17,23 @@ body a, p, h1, h2, h3, h4, h5, h6 {
     display: none;
 }
 
+.planshet {
+    display: none;
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    background-color: #23A6F0;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+}
+
 /*FONTS FIX*/
 body a {
     text-decoration: none;
@@ -93,7 +110,7 @@ body p {
 }
 
 header {
-    width: 1440px;
+    width: 100%;
     height: 621px;
     background: #FAFAFA;
 }
@@ -101,6 +118,7 @@ header {
 .navbar__2 {
     display: flex;
     justify-content: space-between;
+    margin-left: -282px;
 }
 
 .navbar__2__fix {
@@ -255,7 +273,7 @@ header {
 
 /*FEATURES*/
 .features {
-    width: 1440px;
+    width: 100%;
     height: 612px;
 }
 
@@ -264,7 +282,7 @@ header {
     flex-direction: column;
     align-items: center;
     padding: 112px 0px;
-    gap: 81px;
+    gap: 67px;
 }
 
 #block__pers {
@@ -326,7 +344,7 @@ header {
 
 /*TESTIMONIALS*/
 .testimonials {
-    width: 1440px;
+    width: 100%;
     height: 659px;
 }
 
@@ -335,7 +353,7 @@ header {
     flex-direction: column;
     align-items: center;
     padding: 112px 0px;
-    gap: 9px;
+    gap: 52px;
     width: 1050px;
 }
 
@@ -417,7 +435,7 @@ header {
 
 /*ABOUT US*/
 .about__us {
-    width: 1440px;
+    width: 100%;
     height: 869px;
 }
 
@@ -426,7 +444,7 @@ header {
     flex-direction: column;
     align-items: center;
     padding: 112px 0px;
-    gap: 39px;
+    gap: 83px;
 }
 
 #row__about {
@@ -531,7 +549,7 @@ header {
 
 /*PRICING*/
 .pricing {
-    width: 1440px;
+    width: 100%;
     height: 1052px;
 }
 
@@ -540,7 +558,7 @@ header {
     flex-direction: column;
     align-items: center;
     padding: 112px 0px;
-    gap: 23px;
+    gap: 66px;
 }
 
 #row__pricing {
@@ -691,7 +709,7 @@ header {
     gap: 30px;
     background: #FFFFFF;
     border-radius: 10px;
-    width: 1052px;
+    width: 100%;
     height: 573px;
     
 }
@@ -767,12 +785,12 @@ header {
 
 /*FOOTER*/
 .footer {
-    width: 1440px;
+    width: 100%;
     height: 414px;
 }
 
 .block__footer {
-    width: 1440px;
+    width: 100%;
     height: 338px;
 }
 
@@ -937,12 +955,13 @@ header {
     .navbar__2 {
         position: fixed;
         display: block;
-        top: -100%;
+        top: -200%;
         left: 0;
         width: 100%;
         height: 532px;
         background: white;
         z-index: 1;
+        margin-left: 0;
     }
 
     .navbar__2.active {
@@ -1190,6 +1209,7 @@ header {
 
     .block__pricing {
         padding: 92px 0px 44px 0px;
+        gap: 36px;
     }
 
     #row__pricing {
@@ -1299,6 +1319,9 @@ header {
 
     /*FOOTER END*/
 
+    #myBtn {
+        display: none;
+    }
 }
 /*MOBILE END*/
 
@@ -1313,10 +1336,77 @@ header {
         display:block;
     }
 
+    .planshet {
+        display: block;
+    }
+
+    body h1 {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 142%;
+        letter-spacing: -0.7px;
+    }
+
+    body h6 {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.2px;
+        color: #737373;
+    }
+
     /*HEADER*/
     header {
         width: 100%;
-        height: auto;
+        height: 578px
+    }
+
+    .navbar__main {
+        width: auto;
+    }
+    
+    .navbar__3__fix {
+        margin-right: 0px;
+        gap: 2%;
+        justify-content: space-between;
+    }
+
+    .navbar__nav {
+        gap: 6%;
+    }
+
+    .navbar__2__fix {
+        margin-left: -46%;
+    }
+
+    .head__btns button {
+        padding: 15px 30px;
+    }
+
+    .navbar__2 {
+        width: 36%;
+        justify-content: center;
+        margin-left: 0px;
+    }
+
+    .head__cont__left .desktop {
+        display: none;
+    }
+
+    .head__cont #desktop {
+        display: none;
+    }
+
+    .head__cont {
+        width: auto;
+        top: 15px;
+        gap: unset;
+    }
+
+    .navbar__3 button {
+        padding: 15px 6px;
+        gap: 15px;
+        width: 175px;
     }
     /*HEADER END*/
 
@@ -1325,12 +1415,42 @@ header {
         width: 100%;
         height: auto;
     }
+
+    #block__fe {
+        padding: 80px 0px 40px 0px;
+    }
+
+    #block__pers {
+        width: 25%;
+    }
+
+    .card-item h5 {
+        line-height: inherit;
+    }
+
+    .row__fe {
+        width: 100%;
+        height: auto;
+        gap: unset;
+        justify-content: center;
+    }
     /*FEATURES END*/
 
     /*TESTIMONIALS*/
     .testimonials {
         width: 100%;
         height: auto;
+    }
+
+    #block__testi {
+        padding: 80px 0px 40px 0px;
+    }
+
+    #row__testi {
+        gap: unset;
+        width: auto;
+        margin-right: auto;
+        justify-content: space-between;
     }
     /*TESTIMONIALS END*/
 
@@ -1339,12 +1459,43 @@ header {
         width: 100%;
         height: auto;
     }
+
+    .block__about {
+        padding: 80px 0px 40px 0px;
+        gap: 40px;
+    }
+
+    #block__pers .desktop {
+        display: none;
+    }
+
+    #row__about {
+        width: auto;
+        height: auto;
+        gap: unset;
+        align-items: center;
+    }
+
+    #left__about {
+        display: block;
+        padding: 0;
+        gap: 35px;
+        width: 50%;
+    }
+
+    #right__about {
+        width: 50%;
+    }
     /*ABOUT US END*/
 
     /*PRICING*/
     .pricing {
         width: 100%;
         height: auto;
+    }
+
+    .block__pricing {
+        padding: 80px 0px 40px 0px;
     }
     /*PRICING END*/
 
@@ -1354,6 +1505,27 @@ header {
         height: auto;
     }
 
+    .card__item__contact {
+        width: auto;
+        height: auto;
+    }
+
+    .contact .block__contact {
+        padding: 160px 0px 25px;
+    }
+
+    .form-group .form-control {
+        width: 325px;
+    }
+
+    .form-control__2 {
+        width: 670px;
+    }
+
+    .frame__1 {
+        width: auto;
+        height: auto;
+    }
     /*CONTACT END*/
 
     /*FOOTER*/
@@ -1361,5 +1533,39 @@ header {
         width: 100%;
         height: auto;
     }
+
+    .row__footer .desktop {
+        display: none;
+    }
+
+    .container__footer {
+        padding: 40px 0px;
+        height: auto;
+    }
+
+    .block__footer {
+        width: 100%;
+        height: 100%;
+    }
+
+    .row__footer {
+        width: 90%;
+        height: auto;
+    }
     /*FOOTER END*/
+}
+
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    
+    .navbar__2__fix {
+        margin-left: -124%;
+    }
+    
+}
+
+@media (min-width: 1201px) and (max-width: 1399px) {
+    .navbar__2__fix {
+        margin-left: 0px;
+    }
 }
